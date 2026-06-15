@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salone Ulpian — Barbiere a Bolzano | Piazza Mazzini 17</title>
+  <meta name="description" content="Salone Ulpian, barbiere a Bolzano in Piazza Mazzini 17. Tagli precisi e curati per uomo, bambino e barba. Walk-in benvenuti. Aperto lun–sab 9:00–17:00. Tel. 349 644 7298.">
+  <meta name="keywords" content="barbiere Bolzano, salone barbiere Bolzano centro, taglio capelli uomo Bolzano, barba Bolzano, Salone Ulpian, Piazza Mazzini barbiere">
+  <meta property="og:title" content="Salone Ulpian — Barbiere a Bolzano">
+  <meta property="og:description" content="Tagli precisi e curati nel cuore di Bolzano. Walk-in benvenuti, 6 giorni su 7.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "Salone Ulpian",
+    "image": "logoUlp.jpg",
+    "description": "Barbiere moderno premium a Bolzano, specializzato in tagli uomo precisi e curati.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Piazza Mazzini 17",
+      "addressLocality": "Bolzano",
+      "postalCode": "39100",
+      "addressCountry": "IT"
+    },
+    "telephone": "+393496447298",
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "09:00",
+      "closes": "17:00"
+    }],
+    "priceRange": "€15",
+    "sameAs": [
+      "https://www.instagram.com/salone.ulpian",
+      "https://www.facebook.com/share/18Yi23YtXK/"
+    ]
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black: #111111;
+      --dark: #1C1C1C;
+      --gold: #C8A96E;
+      --gold-dark: #A88A52;
+      --white: #FFFFFF;
+      --cream: #F8F5EF;
+      --gray-light: #E8E4DC;
+      --gray-mid: #9E9A94;
+      --gray-text: #555250;
+      --font-heading: 'Playfair Display', Georgia, serif;
+      --font-body: 'Inter', system-ui, sans-serif;
+      --max-w: 1200px;
+      --section-py: clamp(64px, 10vw, 120px);
+      --radius: 6px;
+      --t: 0.25s ease;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      color: var(--dark);
+      background: var(--white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+
+    .heading-xl {
+      font-family: var(--font-heading);
+      font-size: clamp(2.6rem, 6vw, 4.8rem);
+      font-weight: 700;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+    }
+    .heading-lg {
+      font-family: var(--font-heading);
+      font-size: clamp(1.9rem, 4vw, 3rem);
+      font-weight: 600;
+      line-height: 1.15;
+    }
+    .label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: block;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 clamp(20px, 5vw, 48px);
+    }
+    section { padding: var(--section-py) 0; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-body);
+      font-size: 0.875rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      padding: 14px 28px;
+      border-radius: 3px;
+      border: 2px solid transparent;
+      cursor: pointer;
+      text-decoration: none;
+      transition: var(--t);
+      white-space: nowrap;
+    }
+    .btn:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+    .btn-gold  { background: var(--gold); color: var(--black); border-color: var(--gold); }
+    .btn-gold:hover { background: var(--gold-dark); border-color: var(--gold-dark); }
+    .btn-ghost { background: transparent; color: var(--white); border-color: rgba(255,255,255,0.35); }
+    .btn-ghost:hover { border-color: var(--white); background: rgba(255,255,255,0.08); }
+    .btn-dark  { background: var(--dark); color: var(--white); border-color: var(--dark); }
+    .btn-dark:hover { background: #333; border-color: #333; }
+    .btn-outline { background: transparent; color: var(--dark); border-color: var(--dark); }
+    .btn-outline:hover { background: var(--dark); color: var(--white); }
+
+    /* ── NAVBAR ───────────────────────────────────────── */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 22px 0;
+      transition: background 0.3s, padding 0.3s, box-shadow 0.3s;
+    }
+    .nav.scrolled {
+      background: rgba(17,17,17,0.96);
+      backdrop-filter: blur(12px);
+      padding: 14px 0;
+      box-shadow: 0 1px 0 rgba(255,255,255,0.05);
+    }
+    .nav .container { display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo {
+      font-family: var(--font-heading);
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--white);
+      text-decoration: none;
+    }
+    .nav-logo span { color: var(--gold); }
+    .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+    .nav-links a {
+      color: rgba(255,255,255,0.65);
+      text-decoration: none;
+      font-size: 0.83rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      transition: color var(--t);
+    }
+    .nav-links a:hover { color: var(--white); }
+    .nav-cta { font-size: 0.83rem; padding: 10px 20px; }
+    .hamburger {
+      display: none; flex-direction: column; gap: 5px;
+      cursor: pointer; background: none; border: none; padding: 4px;
+    }
+    .hamburger span {
+      display: block; width: 22px; height: 2px;
+      background: var(--white); transition: var(--t); border-radius: 2px;
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    .mobile-menu {
+      display: none; position: fixed; inset: 0; background: var(--black); z-index: 99;
+      padding: 96px 32px 48px; flex-direction: column; gap: 28px;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      font-family: var(--font-heading);
+      font-size: 2rem; color: var(--white); text-decoration: none; font-weight: 600;
+    }
+    .mobile-menu a:hover { color: var(--gold); }
+    .mobile-menu .btn { align-self: flex-start; margin-top: 12px; }
+
+    @media (max-width: 768px) {
+      .nav-links, .nav-cta { display: none; }
+      .hamburger { display: flex; }
+    }
+
+    /* ── HERO ─────────────────────────────────────────── */
+    #hero {
+      min-height: 100svh;
+      background: var(--black);
+      display: flex;
+      align-items: flex-end;
+      position: relative;
+      overflow: hidden;
+      padding: 0;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      /* PLACEHOLDER: sostituire con foto professionale del salone
+         background-image: url('img1Ulp.png');
+         background-size: cover; background-position: center; */
+      background: linear-gradient(145deg, #1a1a1a 0%, #242018 60%, #1a1a1a 100%);
+    }
+    .hero-bg::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(to top,
+        rgba(17,17,17,0.97) 0%,
+        rgba(17,17,17,0.55) 45%,
+        rgba(17,17,17,0.25) 100%);
+    }
+    .hero-ring {
+      position: absolute; top: 22%; right: 8%;
+      width: clamp(180px,28vw,380px); height: clamp(160px,28vw,360px);
+      border: 1px solid rgba(200,169,110,0.1); border-radius: 50%;
+      pointer-events: none;
+      background-image: url('logoUlp.jpg'); background-size: cover; background-position: center;
+    }
+    .hero-ring::before {
+      content: ''; position: absolute; inset: 22px;
+      border: 1px solid rgba(200,169,110,0.06); border-radius: 50%;
+    }
+    .hero-content {
+      position: relative; z-index: 1;
+      padding-bottom: clamp(64px, 10vw, 110px);
+    }
+    .hero-content .label { margin-bottom: 18px; }
+    .hero-content .heading-xl { color: var(--white); max-width: 14ch; margin-bottom: 22px; }
+    .hero-content .heading-xl em { font-style: italic; color: var(--gold); }
+    .hero-content > p {
+      color: rgba(255,255,255,0.6);
+      font-size: clamp(1rem, 1.4vw, 1.12rem);
+      max-width: 44ch; margin-bottom: 40px; font-weight: 300;
+    }
+    .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+    .hero-stats {
+      position: absolute;
+      bottom: clamp(64px, 10vw, 110px);
+      right: clamp(20px, 5vw, 48px);
+      display: flex; align-items: center; gap: 24px; z-index: 1;
+    }
+    .hero-stat { text-align: right; }
+    .hero-stat .n {
+      font-family: var(--font-heading);
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 700; color: var(--white); line-height: 1;
+    }
+    .hero-stat .d {
+      font-size: 0.65rem; color: rgba(255,255,255,0.38);
+      text-transform: uppercase; letter-spacing: 0.1em;
+    }
+    .hero-divider { width: 1px; height: 36px; background: rgba(255,255,255,0.12); }
+    .scroll-cue {
+      position: absolute; bottom: 24px; left: 50%;
+      transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: 8px; z-index: 1;
+    }
+    .scroll-cue span {
+      font-size: 0.6rem; color: rgba(255,255,255,0.28);
+      letter-spacing: 0.15em; text-transform: uppercase;
+    }
+    .scroll-line {
+      width: 1px; height: 38px;
+      background: linear-gradient(to bottom, rgba(200,169,110,0.6), transparent);
+      animation: pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse { 0%,100% { opacity: 0.35; } 50% { opacity: 1; } }
+    @media (max-width: 560px) { .hero-stats { display: none; } }
+
+    /* ── ABOUT ────────────────────────────────────────── */
+    #about { background: var(--cream); }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(40px, 6vw, 80px);
+      align-items: center;
+      object-position: center;
+    }
+    .about-media {
+      aspect-ratio: 4/5; border-radius: var(--radius);
+      overflow: hidden; position: relative; background: var(--gray-light); object-position: center;
+    }
+    .ph {
+      width: 110%; height: 110%; min-height: 200px;
+      display: flex; align-items: center; justify-content: center;
+      background: linear-gradient(135deg, #e8e3da 0%, #d2cdc4 100%);
+      color: var(--gray-mid); font-size: 0.75rem;
+      font-style: italic; object-position: center; 
+    }
+    .about-tag {
+      position: absolute; bottom: 20px; left: 20px;
+      background: var(--black); color: var(--white);
+      padding: 10px 16px; border-radius: 3px; font-size: 0.78rem; font-weight: 500;
+    }
+    .about-tag strong {
+      display: block; color: var(--gold);
+      font-size: 1.05rem; font-family: var(--font-heading);
+    }
+    .about-text .label { margin-bottom: 14px; }
+    .about-text .heading-lg { color: var(--dark); margin-bottom: 20px; }
+    .about-text p { color: var(--gray-text); margin-bottom: 14px; font-size: 1rem; }
+    .about-feats { display: flex; flex-direction: column; gap: 12px; margin-top: 28px; }
+    .about-feat { display: flex; align-items: flex-start; gap: 12px; }
+    .about-feat svg { width: 18px; height: 18px; flex-shrink: 0; margin-top: 3px; color: var(--gold); }
+    .about-feat p { margin: 0; font-size: 0.9rem; color: var(--gray-text); }
+    @media (max-width: 768px) {
+      .about-grid { grid-template-columns: 1fr; }
+      .about-media { aspect-ratio: 3/2; }
+    }
+
+    /* ── SERVICES ─────────────────────────────────────── */
+    #services { background: var(--black); }
+    .sec-header { margin-bottom: clamp(40px, 6vw, 64px); }
+    .sec-header .label { margin-bottom: 12px; }
+    .sec-header .heading-lg { color: var(--white); }
+    .sec-header p { color: rgba(255,255,255,0.45); margin-top: 10px; }
+    .sec-header.center { text-align: center; }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .svc {
+      background: var(--dark); padding: 32px;
+      transition: background var(--t);
+    }
+    .svc:hover { background: #222; }
+    .svc-icon { width: 36px; height: 36px; margin-bottom: 18px; color: var(--gold); }
+    .svc h3 {
+      font-family: var(--font-heading); font-size: 1.15rem;
+      font-weight: 600; color: var(--white); margin-bottom: 8px;
+    }
+    .svc p { color: rgba(255,255,255,0.42); font-size: 0.85rem; line-height: 1.65; }
+    .svc-price {
+      display: inline-block; margin-top: 16px;
+      font-size: 0.68rem; font-weight: 600;
+      letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); opacity: 0.75;
+    }
+
+    /* ── PRICING ──────────────────────────────────────── */
+    #pricing { background: var(--white); }
+    #pricing .sec-header .heading-lg { color: var(--dark); }
+    .price-list { max-width: 620px; }
+    .price-row {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 0; border-bottom: 1px solid var(--gray-light); gap: 16px;
+    }
+    .price-row:first-child { border-top: 1px solid var(--gray-light); }
+    .price-info h4 {
+      font-family: var(--font-heading); font-size: 1rem;
+      font-weight: 600; color: var(--dark); margin-bottom: 2px;
+    }
+    .price-info span { font-size: 0.78rem; color: var(--gray-mid); }
+    .price-val {
+      font-family: var(--font-heading); font-size: 1.3rem;
+      font-weight: 700; color: var(--dark); white-space: nowrap;
+    }
+    .price-val.soft {
+      font-family: var(--font-body); font-size: 0.75rem;
+      color: var(--gray-mid); font-weight: 400; font-style: italic; text-align: right;
+    }
+    .price-cta { margin-top: 36px; }
+
+    /* ── GALLERY ──────────────────────────────────────── */
+    #gallery { background: var(--cream); }
+    #gallery .sec-header .heading-lg { color: var(--dark); }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+    .g-item {
+      aspect-ratio: 1; border-radius: 3px;
+      overflow: hidden; background: var(--gray-light); align-items: center;
+    }
+    .g-item:first-child { grid-column: span 2; aspect-ratio: 2/1; }
+    .gallery-footer {
+      margin-top: 24px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+    }
+    .gallery-footer p { color: var(--gray-text); font-size: 0.875rem; }
+    @media (max-width: 768px) {
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+      .g-item:first-child { grid-column: span 2; }
+    }
+
+    /* ── CONTACT / HOURS ──────────────────────────────── */
+    #contact { background: var(--black); }
+    .contact-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: clamp(40px, 6vw, 80px);
+    }
+    .contact-col .label { margin-bottom: 12px; }
+    .contact-col .heading-lg { color: var(--white); margin-bottom: 32px; }
+    .hours-list { list-style: none; }
+    .h-row {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.06);
+      font-size: 0.9rem;
+    }
+    .h-row .day { color: rgba(255,255,255,0.5); }
+    .h-row .time { color: var(--white); font-weight: 500; }
+    .h-row.closed .time { color: rgba(255,255,255,0.25); }
+    .h-row.today .day { color: var(--gold); font-weight: 600; }
+    .h-row.today .time { color: var(--gold); }
+    .c-list { list-style: none; display: flex; flex-direction: column; gap: 18px; margin-bottom: 36px; }
+    .c-item { display: flex; align-items: flex-start; gap: 13px; }
+    .c-item svg { width: 18px; height: 18px; flex-shrink: 0; color: var(--gold); margin-top: 3px; }
+    .c-item a, .c-item p { color: rgba(255,255,255,0.7); font-size: 0.93rem; text-decoration: none; transition: color var(--t); line-height: 1.5; }
+    .c-item a:hover { color: var(--white); }
+    .socials { display: flex; gap: 10px; }
+    .social-btn {
+      display: flex; align-items: center; gap: 7px;
+      padding: 9px 15px; border: 1px solid rgba(255,255,255,0.1); border-radius: 3px;
+      color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.78rem; font-weight: 500;
+      transition: var(--t);
+    }
+    .social-btn:hover { border-color: var(--gold); color: var(--gold); }
+    .social-btn svg { width: 14px; height: 14px; }
+    @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
+
+    /* ── MAP ──────────────────────────────────────────── */
+    #map { padding: 0; height: 420px; }
+    #map iframe { width: 100%; height: 100%; border: none; display: block; }
+
+    /* ── BOOKING ──────────────────────────────────────── */
+    #booking { background: var(--cream); }
+    #booking .sec-header .heading-lg { color: var(--dark); }
+    #booking .sec-header p { color: var(--gray-text); margin-top: 10px; }
+    #booking .sec-header a { color: var(--gold); font-weight: 600; }
+    .booking-wrap { max-width: 540px; margin: 0 auto; }
+    .fg { margin-bottom: 18px; }
+    .fg label {
+      display: block; font-size: 0.75rem; font-weight: 600;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      color: var(--gray-text); margin-bottom: 7px;
+    }
+    .fg input, .fg select, .fg textarea {
+      width: 100%; padding: 13px 15px;
+      border: 1.5px solid var(--gray-light); border-radius: 3px;
+      font-family: var(--font-body); font-size: 0.93rem; color: var(--dark);
+      background: var(--white); transition: border-color var(--t); appearance: none;
+    }
+    .fg input:focus, .fg select:focus, .fg textarea:focus {
+      outline: none; border-color: var(--gold);
+    }
+    .fg textarea { resize: vertical; min-height: 90px; }
+    .fg-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .form-note { font-size: 0.73rem; color: var(--gray-mid); margin-top: 12px; text-align: center; }
+    @media (max-width: 480px) { .fg-row { grid-template-columns: 1fr; } }
+
+    /* ── FAQ ──────────────────────────────────────────── */
+    #faq { background: var(--white); }
+    #faq .sec-header .heading-lg { color: var(--dark); }
+    .faq-list { max-width: 680px; }
+    .faq-item { border-bottom: 1px solid var(--gray-light); }
+    .faq-q {
+      width: 100%; display: flex; justify-content: space-between; align-items: center;
+      padding: 20px 0; background: none; border: none; cursor: pointer;
+      text-align: left; gap: 16px; font-family: var(--font-body);
+      font-size: 0.97rem; font-weight: 500; color: var(--dark); transition: color var(--t);
+    }
+    .faq-q:hover { color: var(--gold); }
+    .faq-q:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+    .faq-icon { width: 18px; height: 18px; flex-shrink: 0; color: var(--gold); transition: transform var(--t); }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+    .faq-a-inner { padding-bottom: 18px; color: var(--gray-text); font-size: 0.93rem; line-height: 1.7; }
+    .faq-item.open .faq-a { max-height: 300px; }
+
+    /* ── CTA FINAL ────────────────────────────────────── */
+    #cta-final {
+      background: var(--gold);
+      padding: clamp(64px, 9vw, 108px) 0;
+      text-align: center;
+    }
+    #cta-final .heading-lg { color: var(--black); margin-bottom: 12px; }
+    #cta-final > .container > p { color: rgba(0,0,0,0.55); margin-bottom: 40px; }
+    .cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn-gold-out { background: transparent; color: var(--black); border: 2px solid rgba(0,0,0,0.28); border-radius: 3px; padding: 14px 28px; font-size: 0.875rem; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: var(--t); }
+    .btn-gold-out:hover { background: rgba(0,0,0,0.07); border-color: var(--black); }
+
+    /* ── FOOTER ───────────────────────────────────────── */
+    footer { background: var(--black); padding: 52px 0 32px; }
+    .footer-grid {
+      display: grid; grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px; margin-bottom: 40px;
+    }
+    .footer-logo { font-family: var(--font-heading); font-size: 1.3rem; font-weight: 700; color: var(--white); margin-bottom: 10px; }
+    .footer-logo span { color: var(--gold); }
+    .footer-tag { color: rgba(255,255,255,0.35); font-size: 0.83rem; max-width: 28ch; line-height: 1.6; }
+    .footer-col h4 { color: var(--white); font-size: 0.7rem; font-weight: 600; letter-spacing: 0.13em; text-transform: uppercase; margin-bottom: 16px; }
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: 10px; }
+    .footer-col ul li a { color: rgba(255,255,255,0.4); text-decoration: none; font-size: 0.83rem; transition: color var(--t); }
+    .footer-col ul li a:hover { color: var(--white); }
+    .footer-addr { color: rgba(255,255,255,0.28); font-size: 0.78rem; margin-top: 14px; line-height: 1.6; }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding-top: 24px; display: flex;
+      justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap;
+    }
+    .footer-bottom p { color: rgba(255,255,255,0.2); font-size: 0.73rem; }
+    @media (max-width: 768px) {
+      .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+    }
+
+    /* ── REVEAL ───────────────────────────────────────── */
+    .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+      .reveal { opacity: 1; transform: none; transition: none; }
+      .scroll-line { animation: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══ NAVBAR ═══════════════════════════════════════════════════════════ -->
+<header>
+  <nav class="nav" id="nav" aria-label="Navigazione principale">
+    <div class="container">
+      <a href="#hero" class="nav-logo">Salone <span>Ulpian</span></a>
+      <ul class="nav-links">
+        <li><a href="#services">Servizi</a></li>
+        <li><a href="#pricing">Prezzi</a></li>
+        <li><a href="#gallery">Galleria</a></li>
+        <li><a href="#contact">Orari</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <a href="https://www.instagram.com/salone.ulpian/" class="btn btn-gold nav-cta" aria-label="Contatta il salone su Instagram">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        Seguici su Instagram
+      </a>
+       <a href="https://www.facebook.com/salone.ulpian/" class="btn btn-gold nav-cta" aria-label="Contatta il salone su Facebook">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        Seguici su Facebook
+      </a>
+      <a href="tel:+393496447298" class="btn btn-gold nav-cta" aria-label="Chiama il salone">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        349 644 7298
+      </a>
+      <button class="hamburger" id="ham" aria-label="Apri menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mob" role="dialog" aria-modal="true" aria-label="Menu">
+    <a href="#services" class="mnl">Servizi</a>
+    <a href="#pricing" class="mnl">Prezzi</a>
+    <a href="#gallery" class="mnl">Galleria</a>
+    <a href="#contact" class="mnl">Orari &amp; Contatti</a>
+    <a href="#faq" class="mnl">FAQ</a>
+    <a href="tel:+393496447298" class="btn btn-gold">Chiama ora</a>
+  </div>
+</header>
+
+<!-- ═══ HERO ══════════════════════════════════════════════════════════════ -->
+<section id="hero" aria-label="Introduzione">
+  <div class="hero-bg" role="presentation"></div>
+  <div class="hero-ring" role="presentation"></div>
+  <div class="container hero-content">
+    <span class="label">Barbiere a Bolzano — Piazza Mazzini 17</span>
+    <h1 class="heading-xl">Il tuo taglio.<br><em>La tua identità.</em></h1>
+    <p>Tagli precisi, curati e moderni nel cuore di Bolzano.<br>Walk-in benvenuti — nessun appuntamento necessario.</p>
+    <div class="hero-ctas">
+      <a href="tel:+393496447298" class="btn btn-gold">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        Chiama ora
+      </a>
+      <a href="#booking" class="btn btn-ghost">Prenota appuntamento</a>
+    </div>
+  </div>
+  <div class="hero-stats" role="presentation">
+    <div class="hero-stat"><div class="n">€15</div><div class="d">Taglio uomo</div></div>
+    <div class="hero-divider"></div>
+    <div class="hero-stat"><div class="n">20'</div><div class="d">Durata media</div></div>
+    <div class="hero-divider"></div>
+    <div class="hero-stat"><div class="n">6×</div><div class="d">Giorni su 7</div></div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true">
+    <span>Scorri</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ═══ ABOUT ═════════════════════════════════════════════════════════════ -->
+<section id="about" aria-labelledby="about-h">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-media reveal">
+        <!-- PLACEHOLDER: inserire foto del salone o del barbiere in azione -->
+        <div class="ph"><img src="img1Ulpp.jpg" alt="FOTO TAGLIO"></div>
+        <div class="about-tag"><strong>Bolzano</strong>Piazza Mazzini 17</div>
+      </div>
+      <div class="about-text reveal">
+        <span class="label">Chi siamo</span>
+        <h2 class="heading-lg" id="about-h">Precisione.<br>Stile. Cura.</h2>
+        <p>Salone Ulpian è il barbiere moderno di riferimento nel centro di Bolzano. Un ambiente professionale e accogliente, dove ogni taglio è preciso e ogni cliente è il benvenuto — con o senza appuntamento.</p>
+        <p>Che tu voglia un taglio netto, una barba definita o un cambio di look, siamo qui per darti il meglio in 20–30 minuti.</p>
+        <div class="about-feats">
+          <div class="about-feat">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+            <p>Walk-in sempre benvenuti, nessun appuntamento obbligatorio</p>
+          </div>
+          <div class="about-feat">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+            <p>Tagli in 20–30 minuti: veloci, precisi, senza compromessi</p>
+          </div>
+          <div class="about-feat">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+            <p>In centro a Bolzano, facile da raggiungere a piedi o con i mezzi</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SERVICES ══════════════════════════════════════════════════════════ -->
+<section id="services" aria-labelledby="services-h">
+  <div class="container">
+    <div class="sec-header center reveal">
+      <span class="label">Cosa facciamo</span>
+      <h2 class="heading-lg" id="services-h">I nostri servizi</h2>
+      <p>Tutto quello che serve per essere al meglio.</p>
+    </div>
+    <div class="services-grid">
+      <article class="svc reveal">    
+        <h3>Taglio Uomo</h3>
+        <p>Taglio preciso e moderno adatto al tuo stile. Dal fade all'undercut, dal classico al contemporaneo.</p>
+        <span class="svc-price">€15</span>
+      </article>
+      <article class="svc reveal">
+        <h3>Taglio Bambino</h3>
+        <p>Per i più piccoli, con pazienza e mani esperte. Un'esperienza piacevole anche per i bambini.</p>
+        <!-- PLACEHOLDER: inserire prezzo taglio bambino -->
+        <span class="svc-price">€10</span>
+      </article>
+      <article class="svc reveal">
+        <h3>Barba</h3>
+        <p>Definizione, rifinitura e sagomatura della barba. Linee precise per un look ordinato e deciso.</p>
+        <!-- : inserire prezzo barba -->
+        <span class="svc-price">Chiedi in salone</span>
+      </article>
+      <article class="svc reveal">
+        <h3>Taglio + Barba</h3>
+        <p>Il pacchetto completo per un look curato dalla testa alla barba. Massimo risultato in un'unica visita.</p>
+        <!-- PLACEHOLDER: inserire prezzo combo -->
+        <span class="svc-price">Chiedi in salone</span>
+      </article>
+      <article class="svc reveal">
+        <h3>Colore</h3>
+        <p>Trattamenti colore per un look personale e deciso. Consulenza inclusa per trovare la tonalità giusta.</p>
+        <!-- PLACEHOLDER: inserire prezzo colore -->
+        <span class="svc-price">Chiedi in salone</span>
+      </article>
+      <article class="svc reveal">
+        <h3>Grooming</h3>
+        <p>Cura dei dettagli: sopracciglia, nuca, orecchie. I piccoli accorgimenti che completano il look.</p>
+        <!-- PLACEHOLDER: inserire prezzo grooming -->
+        <span class="svc-price">Chiedi in salone</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PRICING ════════════════════════════════════════════════════════════ -->
+<section id="pricing" aria-labelledby="pricing-h">
+  <div class="container">
+    <div class="sec-header reveal">
+      <span class="label">Listino prezzi</span>
+      <h2 class="heading-lg" id="pricing-h">Prezzi chiari.<br>Nessuna sorpresa.</h2>
+    </div>
+    <div class="price-list reveal">
+      <div class="price-row">
+        <div class="price-info"><h4>Taglio Uomo</h4><span>Include lavaggio e asciugatura</span></div>
+        <div class="price-val">€15</div>
+      </div>
+      <div class="price-row">
+        <div class="price-info"><h4>Taglio Bambino</h4><span>Fino a 12 anni</span></div>
+        <!-- PLACEHOLDER: inserire prezzo taglio bambino -->
+        <div class="price-val soft">Chiedi in salone</div>
+      </div>
+      <div class="price-row">
+        <div class="price-info"><h4>Barba — Rifinitura</h4><span>Definizione e sagomatura</span></div>
+        <!-- PLACEHOLDER: inserire prezzo barba -->
+        <div class="price-val soft">Chiedi in salone</div>
+      </div>
+      <div class="price-row">
+        <div class="price-info"><h4>Taglio + Barba</h4><span>Servizio completo</span></div>
+        <!-- PLACEHOLDER: inserire prezzo combo -->
+        <div class="price-val soft">Chiedi in salone</div>
+      </div>
+      <div class="price-row">
+        <div class="price-info"><h4>Colore</h4><span>Consulenza inclusa</span></div>
+        <!-- PLACEHOLDER: inserire prezzo colore -->
+        <div class="price-val soft">Chiedi in salone</div>
+      </div>
+    </div>
+    <div class="price-cta reveal">
+      <a href="tel:+393496447298" class="btn btn-outline">
+        Listino completo — 349 644 7298
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ GALLERY ════════════════════════════════════════════════════════════ -->
+<section id="gallery" aria-labelledby="gallery-h">
+  <div class="container">
+    <div class="sec-header reveal">
+      <span class="label">Galleria</span>
+      <h2 class="heading-lg" id="gallery-h">Il lavoro parla<br>da solo.</h2>
+    </div>
+    <!-- PLACEHOLDER: sostituire ogni .ph con un <img> reale. Le foto prima/dopo sono su @salone.ulpian -->
+    <div class="gallery-grid">
+      <div class="g-item reveal"><div class="ph"><img src="img2Ulp.png" alt="FOTO SALONE / BARBIERE"></div></div>
+      <div class="g-item reveal"><div class="ph"><img src="img3Ulpp.jpg" alt="FOTO TAGLIO"></div></div>
+      <div class="g-item reveal"><div class="ph"><img src="img5Ulp.png" alt="FOTO BARBA"></div></div>
+      <div class="g-item reveal"><div class="ph"><img src="img6Ulp.png" alt="FOTO AMBIENTE"></div></div>
+      <div class="g-item reveal"><div class="ph"><img src="img7Ulp.png" alt="FOTO TEAM"></div></div>
+    </div>
+    <div class="gallery-footer reveal">
+      <p>Vedi tutti i lavori su Instagram</p>
+      <a href="https://www.instagram.com/salone.ulpian" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="Profilo Instagram di Salone Ulpian">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        @salone.ulpian
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT / HOURS ════════════════════════════════════════════════════ -->
+<section id="contact" aria-labelledby="contact-h">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-col reveal">
+        <span class="label">Quando veniamo</span>
+        <h2 class="heading-lg" id="contact-h">Orari di<br>apertura</h2>
+        <ul class="hours-list" aria-label="Orari di apertura">
+          <li class="h-row" id="d-lun"><span class="day">Lunedì</span><span class="time">09:00 – 17:00</span></li>
+          <li class="h-row" id="d-mar"><span class="day">Martedì</span><span class="time">09:00 – 17:00</span></li>
+          <li class="h-row" id="d-mer"><span class="day">Mercoledì</span><span class="time">09:00 – 17:00</span></li>
+          <li class="h-row" id="d-gio"><span class="day">Giovedì</span><span class="time">09:00 – 17:00</span></li>
+          <li class="h-row" id="d-ven"><span class="day">Venerdì</span><span class="time">09:00 – 17:00</span></li>
+          <li class="h-row" id="d-sab"><span class="day">Sabato</span><span class="time">09:00 – 17:00</span></li>
+          <li class="h-row closed" id="d-dom"><span class="day">Domenica</span><span class="time">Chiuso</span></li>
+        </ul>
+      </div>
+      <div class="contact-col reveal">
+        <span class="label">Dove siamo</span>
+        <h2 class="heading-lg">Contatti</h2>
+        <ul class="c-list">
+          <li class="c-item">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <p>Piazza Mazzini 17<br>39100 Bolzano (BZ)</p>
+          </li>
+          <li class="c-item">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            <a href="tel:+393496447298">349 644 7298</a>
+          </li>
+          <li class="c-item">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            <a href="https://www.instagram.com/salone.ulpian" target="_blank" rel="noopener noreferrer">@salone.ulpian</a>
+          </li>
+          <li class="c-item">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            <a href="https://www.facebook.com/share/18Yi23YtXK/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          </li>
+        </ul>
+        <div class="socials">
+          <a href="https://www.instagram.com/salone.ulpian" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            Instagram
+          </a>
+          <a href="https://www.facebook.com/share/18Yi23YtXK/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            Facebook
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MAP ════════════════════════════════════════════════════════════════ -->
+<div id="map" aria-label="Posizione di Salone Ulpian su Google Maps">
+  <iframe
+    src="https://maps.google.com/maps?q=Piazza+Mazzini+17,+39100+Bolzano+BZ,+Italy&output=embed&hl=it&z=17"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    title="Salone Ulpian — Piazza Mazzini 17, Bolzano"
+    allowfullscreen>
+  </iframe>
+</div>
+
+<!-- ═══ BOOKING ════════════════════════════════════════════════════════════ -->
+<section id="booking" aria-labelledby="booking-h">
+  <div class="container">
+    <div class="sec-header center reveal">
+      <span class="label">Prenota</span>
+      <h2 class="heading-lg" id="booking-h">Fissa il tuo<br>appuntamento</h2>
+      <p>Preferisci chiamare? <a href="tel:+393496447298">349 644 7298</a> &nbsp;·&nbsp; <a href="https://www.instagram.com/salone.ulpian" target="_blank" rel="noopener noreferrer">@salone.ulpian</a></p>
+    </div>
+    <div class="booking-wrap">
+      <!--
+        NOTA TECNICA: collegare il form a un servizio di ricezione.
+        Opzione A — Formspree (gratuito): creare account su formspree.io,
+          sostituire [FORMSPREE-ID] con il proprio ID nel campo action.
+        Opzione B — inserire una email reale: action="mailto:tua@email.it"
+      -->
+      <form action="https://formspree.io/f/[FORMSPREE-ID]" method="POST" class="reveal" novalidate>
+        <div class="fg-row">
+          <div class="fg">
+            <label for="nome">Nome *</label>
+            <input type="text" id="nome" name="nome" required autocomplete="given-name" placeholder="Mario">
+          </div>
+          <div class="fg">
+            <label for="tel">Telefono *</label>
+            <input type="tel" id="tel" name="telefono" required autocomplete="tel" placeholder="+39 333 000 0000">
+          </div>
+        </div>
+        <div class="fg">
+          <label for="svc">Servizio</label>
+          <select id="svc" name="servizio">
+            <option value="">Seleziona un servizio</option>
+            <option value="taglio-uomo">Taglio Uomo — €15</option>
+            <option value="taglio-bambino">Taglio Bambino</option>
+            <option value="barba">Barba</option>
+            <option value="taglio-barba">Taglio + Barba</option>
+            <option value="colore">Colore</option>
+            <option value="altro">Altro</option>
+          </select>
+        </div>
+        <div class="fg">
+          <label for="note">Note o orario preferito</label>
+          <textarea id="note" name="note" placeholder="Es. vorrei venire giovedì mattina..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-gold" style="width:100%; justify-content:center;">
+          Invia richiesta
+        </button>
+        <p class="form-note">Riceverai conferma tramite telefono. Walk-in sempre benvenuti senza prenotazione.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FAQ ════════════════════════════════════════════════════════════════ -->
+<section id="faq" aria-labelledby="faq-h">
+  <div class="container">
+    <div class="sec-header reveal">
+      <span class="label">Domande frequenti</span>
+      <h2 class="heading-lg" id="faq-h">Tutto quello<br>che vuoi sapere.</h2>
+    </div>
+    <div class="faq-list reveal">
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Devo prenotare per venire?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">No, i walk-in sono sempre benvenuti. Puoi entrare direttamente senza appuntamento. Se vuoi assicurarti un orario preciso, puoi chiamarci al 349 644 7298 o scriverci su Instagram.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Quanto dura una visita?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Un taglio dura in media 20–30 minuti. Siamo veloci, ma non ci affrettiamo sulla qualità. Se hai bisogno anche di barba o altri servizi, calcola qualche minuto in più.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Dove si trova esattamente il salone?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Siamo in Piazza Mazzini 17, 39100 Bolzano — nel centro città, facilmente raggiungibile a piedi o con i mezzi pubblici.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Fate tagli anche per bambini?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Sì, offriamo tagli anche per i più piccoli. Siamo pazienti e cerchiamo di rendere l'esperienza piacevole anche per i bambini.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Come posso contattarvi?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Puoi chiamarci al <a href="tel:+393496447298" style="color:var(--gold)">349 644 7298</a>, scriverci su Instagram <a href="https://www.instagram.com/salone.ulpian" target="_blank" rel="noopener noreferrer" style="color:var(--gold)">@salone.ulpian</a>, oppure compilare il modulo di prenotazione qui sopra.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Siete aperti il sabato?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Sì, siamo aperti dal lunedì al sabato dalle 09:00 alle 17:00. L'unico giorno di chiusura è la domenica.</div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA FINAL ══════════════════════════════════════════════════════════ -->
+<section id="cta-final" aria-label="Prenota ora">
+  <div class="container">
+    <h2 class="heading-lg reveal">Pronto per il tuo<br>prossimo look?</h2>
+    <p class="reveal">Vieni in salone, chiamaci o prenota online. Dal lunedì al sabato, 09:00–17:00.</p>
+    <div class="cta-btns reveal">
+      <a href="tel:+393496447298" class="btn btn-dark">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        349 644 7298
+      </a>
+      <a href="#booking" class="btn-gold-out">Prenota online</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ════════════════════════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <!-- PLACEHOLDER: sostituire con tag <img> del logo reale -->
+        <div class="footer-logo">Salone <span>Ulpian</span></div><logoUlp class="jpg"></logoUlp>
+        <p class="footer-tag">Barbiere di precisione nel cuore di Bolzano. Aperto dal lunedì al sabato.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Pagina</h4>
+        <ul>
+          <li><a href="#about">Chi siamo</a></li>
+          <li><a href="#services">Servizi</a></li>
+          <li><a href="#pricing">Prezzi</a></li>
+          <li><a href="#gallery">Galleria</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contatti</h4>
+        <ul>
+          <li><a href="tel:+393496447298">349 644 7298</a></li>
+          <li><a href="https://www.instagram.com/salone.ulpian" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="https://www.facebook.com/share/18Yi23YtXK/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+        </ul>
+        <p class="footer-addr">Piazza Mazzini 17<br>39100 Bolzano (BZ)</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Salone Ulpian. Tutti i diritti riservati.</p>
+      <p>Lun–Sab · 09:00–17:00</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Navbar scroll state
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+  }, { passive: true });
+
+  // Hamburger / mobile menu
+  const ham = document.getElementById('ham');
+  const mob = document.getElementById('mob');
+  ham.addEventListener('click', () => {
+    const open = ham.classList.toggle('open');
+    mob.classList.toggle('open', open);
+    ham.setAttribute('aria-expanded', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  document.querySelectorAll('.mnl').forEach(a => {
+    a.addEventListener('click', () => {
+      ham.classList.remove('open');
+      mob.classList.remove('open');
+      ham.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    });
+  });
+
+  // Scroll reveal
+  const ro = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); ro.unobserve(e.target); }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -32px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); }
+    });
+  });
+
+  // Highlight today's hours
+  const dayMap = ['d-dom','d-lun','d-mar','d-mer','d-gio','d-ven','d-sab'];
+  const todayEl = document.getElementById(dayMap[new Date().getDay()]);
+  if (todayEl) todayEl.classList.add('today');
+</script>
+</body>
+</html>
